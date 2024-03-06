@@ -1,10 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
 import RecommendedProducts from "@/components/RecommendedProducts";
 import SingleProduct from "@/components/SingleProduct";
-import { ProductType } from "@/types/types";
 import { staticData } from "@/components/SingleProduct/constants";
 
 export default function Home() {
@@ -14,7 +12,7 @@ export default function Home() {
       <RecommendedProducts />
       <div>
         {staticData.map((product, idx) => (
-          <SingleProduct product={product} key={idx}/>
+          <SingleProduct product={product} key={idx} />
         ))}
       </div>
     </div>

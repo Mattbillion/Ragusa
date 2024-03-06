@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { RecommendedData } from "@/components/RecommendedProducts/constants";
-import "swiper/css/navigation";
-import Camp from "@/assets/icons/camp.svg";
-
 import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+import "swiper/css/navigation";
 import "swiper/css";
+
+import Camp from "@/assets/icons/camp.svg";
+import { RecommendedData } from "@/components/RecommendedProducts/constants";
 
 const RecommendedProducts = () => {
   return (
@@ -28,25 +28,27 @@ const RecommendedProducts = () => {
         >
           {RecommendedData.map((item, idx) => (
             <SwiperSlide key={idx}>
+              <div className="flex items-center flex-col justify-center">
+                <Image
+                  className="relative rounded-[64px] drop-shadow-lg"
+                  src={item.src}
+                  alt=""
+                  width={200}
+                  height={264}
+                />
+                <Image
+                  className="mx-auto bg-white rounded-full border h-[54px] w-[54px] flex justify-center items-center mt-[-27px] z-1 relative drop-shadow-lg mb-4"
+                  src={Camp}
+                  alt="icon"
+                  width={24}
+                  height={24}
+                />
                 <div className="flex items-center flex-col justify-center">
-                    <Image
-                        className="relative rounded-[64px] drop-shadow-lg"
-                        src={item.src}
-                        alt=""
-                        width={200}
-                        height={264}
-                    />
-                    <Image
-                        className="mx-auto bg-white rounded-full border h-[54px] w-[54px] flex justify-center items-center mt-[-27px] z-1 relative drop-shadow-lg mb-4"
-                        src={Camp}
-                        alt="icon"
-                        width={24}
-                        height={24}
-                    />
-                    <div className="flex items-center flex-col justify-center">
-                        <h4 className="text-lg text-center max-w-[80%] font-semibold text-[#4D5462]">Тэрэлж ресорт морын аялал</h4>
-                    </div>
+                  <h4 className="text-lg text-center max-w-[80%] font-semibold text-[#4D5462]">
+                    Тэрэлж ресорт морын аялал
+                  </h4>
                 </div>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
