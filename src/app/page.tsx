@@ -13,8 +13,8 @@ export default function Home() {
       <HeroSection />
       <RecommendedProducts />
       <div>
-        {staticData.map((product) => (
-          <SingleProduct product={product} />
+        {staticData.map((product, idx) => (
+          <SingleProduct product={product} key={idx}/>
         ))}
       </div>
     </div>

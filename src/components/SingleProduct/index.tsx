@@ -3,7 +3,7 @@ import Image from "next/image";
 import LocationIcon from "@/assets/icons/location.svg";
 import { ProductType } from "@/types/types";
 
-const SingleProduct = ({ product }: { ProductType }) => {
+const SingleProduct = ({ product }: { product: ProductType }) => {
   return (
     <div className="flex flex-col">
       <Image src={LocationIcon} alt="dada" />

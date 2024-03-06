@@ -1,4 +1,4 @@
-import HainanImage from "@/assets/HeroSection/hainan.png";
+import HainanImage from "@/assets/HeroSection/Hainan.png";
 
 const heroSectionData = [
   {

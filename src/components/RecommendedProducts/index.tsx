@@ -26,8 +26,8 @@ const RecommendedProducts = () => {
           modules={[Navigation]}
           className="mySwiper"
         >
-          {RecommendedData.map((item) => (
-            <SwiperSlide>
+          {RecommendedData.map((item, idx) => (
+            <SwiperSlide key={idx}>
               <div>
                 <div className="">
                   <Image

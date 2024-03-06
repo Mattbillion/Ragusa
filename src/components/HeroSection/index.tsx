@@ -18,8 +18,8 @@ const HeroSection = () => {
         modules={[Navigation, Pagination]}
         className="mySwiper"
       >
-        {heroSectionData.map((item) => (
-          <SwiperSlide>
+        {heroSectionData.map((item, idx) => (
+          <SwiperSlide key={idx}>
             <Image src={item.src} alt="HeroSection" />
           </SwiperSlide>
         ))}
