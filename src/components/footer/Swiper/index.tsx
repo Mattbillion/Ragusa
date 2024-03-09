@@ -5,7 +5,6 @@ import "swiper/css/effect-coverflow";
 
 import { EffectCoverflow, Autoplay } from "swiper/modules";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 import PhuQuoc from "@/assets/FooterImages/FooterImage.webp";
 
 export const CoverFlowSwiper = () => {
