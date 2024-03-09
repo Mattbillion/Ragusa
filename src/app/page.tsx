@@ -20,7 +20,7 @@ export default function Home() {
           </h4>
           <FilterTab filterValues={filterValues} />
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
           {staticData.map((product) => (
             <SingleProduct product={product} />
           ))}

@@ -1,11 +1,13 @@
+"use client";
 import React from "react";
+import { CoverFlowSwiper } from "./Swiper";
 
 const Footer = () => {
   return (
     <div className="bg-[#F4F7F9]">
       <footer className="flex flex-col gap-6 pt-[48px] container">
-        <div></div>
         <div className="flex gap-6 p-3">
+          <CoverFlowSwiper />
           {footerData.map((item, idx) => (
             <div key={idx} className="max-w-[212px] w-full">
               <h4 className="font-medium text-[14px]">{item.title}</h4>
