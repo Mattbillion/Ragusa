@@ -36,7 +36,7 @@ export const CoverFlowSwiper = () => {
             alt="thumbnail"
             height={208}
             width={464}
-            objectFit="cover"
+            objectFit="contain"
           />
         </SwiperSlide>
       ))}
