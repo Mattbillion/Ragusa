@@ -27,7 +27,7 @@ export const CoverFlowSwiper = () => {
         modifier: 1,
       }}
       modules={[EffectCoverflow, Autoplay]}
-      className="max-w-[464px] w-full"
+      className="max-w-[464px] w-full aspect-square"
     >
       {footerSwiperData.map((item) => (
         <SwiperSlide key={item.id}>
